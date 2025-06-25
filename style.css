@@ -144,9 +144,44 @@ background-color:#daedf2;
     h2 {
         width: 90%;
     }
+.swiper-button-container {
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* por encima del contenido del slide */
+  text-align: center;
+}
+
+.cta-button {
+     background-color: #ffffff;
+    color: rgb(20, 188, 240);
+    border: none;
+    padding: 19px 124px;
+    font-size: 26PX;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  color: white;
+  background-color: #1565c0;
+}
 
   
     @media (max-width: 768px) {
+
+      .cta-button {
+     background-color: #ffffff;
+    color: rgb(20, 188, 240);
+    border: none;
+    padding: 9px 44px;
+    font-size: 12PX;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
       .swiper {
         height: 300px;
       }
