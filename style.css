@@ -144,3 +144,12 @@ background-color:#daedf2;
     h2 {
         width: 90%;
     }
+
+  
+    @media (max-width: 768px) {
+      .swiper {
+        height: 300px;
+      }
+    }
+    
+  
