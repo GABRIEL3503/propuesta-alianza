@@ -133,11 +133,14 @@
 
 
     .features_software{
-background-color:#daedf2;
+background-color:transparent;
     border-radius: 8px;
     padding: 12px;
     color: gray;
     }
+    .features_software h3 {
+color: #363636;  
+font-size: 22px;  }
 
     .propuesta{
       color: #2e70b7;
