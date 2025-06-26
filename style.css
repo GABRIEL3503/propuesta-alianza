@@ -5,12 +5,20 @@
     }
 
     body {
-      background: #6595a6;
+      background: #f5f7f9;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color: #fff;
       margin: 0;
       padding: 0;
+    }
+.section-unica img{
+  max-width: 100vw;
+}
+    .section-unica{
+      display: flex
+;
+    justify-content: center;
     }
 
     .swiper {
