@@ -140,8 +140,8 @@ background-color:#daedf2;
     }
 
     .propuesta{
-            display: flex
-;
+      color: #2e70b7;
+    display: flex;
     width: 100vw;
     flex-direction: column;
     align-content: center;
