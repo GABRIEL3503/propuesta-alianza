@@ -15,22 +15,24 @@
       },
     });
 
-     const basePrice = 4800000;
+
+  document.querySelectorAll('.pricing-card').forEach(card => {
+    const basePrice = parseInt(card.dataset.basePrice);
     let totalPrice = basePrice;
-    const priceDisplay = document.getElementById('price');
-    const addons = document.querySelectorAll('.addon');
+
+    const priceDisplay = card.querySelector('.price');
+    const addons = card.querySelectorAll('.addon');
+
+    priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
 
     addons.forEach(addon => {
       addon.addEventListener('click', () => {
         const price = parseInt(addon.dataset.price);
         addon.classList.toggle('active');
 
-        if (addon.classList.contains('active')) {
-          totalPrice += price;
-        } else {
-          totalPrice -= price;
-        }
+        totalPrice += addon.classList.contains('active') ? price : -price;
 
         priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
       });
     });
+  });

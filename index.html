@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <title>Propuesta club Alianza</title>
 </head>
 
@@ -27,13 +30,15 @@
 <section class="section-unica">
   <img  src="img/seccion1.webp" alt="">
 </section>
+      <h1 class="titulo-dos">ARMÁ TU PRESUPUESTO</h1>
+
+<span class ="contenedor-propuesta">
 
   <section class="propuesta">
 
-    <h1 class="titulo">Armá tu plan a medida</h1>
-    <h2>DESARROLLO DE PÁGINA WEB + SOFTWARE</h2>
+    <h2> Desarrolo de Software +  App web</h2>
 
-    <div class="pricing-card">
+<div class="pricing-card" data-base-price="4800000"> <!-- Para la 1ra -->
       <div class="features_software">
         <h3 class="section-title">Software gestion de socios.</h3>
         <div class="feature">Alta y baja, generación  de carnet digital y físico.</div>
@@ -56,17 +61,47 @@
 
       <div class="addons">
         <h3 class="section-title">Mejoras FULL (opcionales):</h3>
-        <div class="addon" data-price="200.000">Galería multimedia: fotos y videos <span class="check"></span></div>
-        <div class="addon" data-price="200.000">Partidos: Ultimo resultado, Próxima fecha, Historial de resultados. <span class="check"></span></div>
-        <div class="addon" data-price="200.000">Plantel actual <span class="check"></span></div>
-        <div class="addon" data-price="200.000">Sección histórica ampliada (personajes, fotos, archivo) <span
-            class="check"></span></div>
-        <div class="addon" data-price="200.000">Otras disciplinas deportivas (Ej: hockey, fútbol femenino) <span
+        <div class="addon" data-price="200.000">Galería multimedia: fotos y videos </span></div>
+        <div class="addon" data-price="200.000">Partidos: Ultimo resultado, Próxima fecha, Historial de resultados. </span></div>
+        <div class="addon" data-price="200.000">Plantel actual /span></div>
+        <div class="addon" data-price="200.000">Sección histórica ampliada (personajes, fotos, archivo) </span></div>
+        <div class="addon" data-price="200.000">Otras disciplinas deportivas (Ej: hockey, fútbol femenino) </div>
+              <div id="btn-add" class="addon " data-price="200.000">Elegír plan Full<span
             class="check"></span></div>
       </div>
     </div>
   </section>
+  <section class="propuesta">
 
+    <h2>Suscripción mensual</h2>
+
+<div class="pricing-card" data-base-price="48000"> <!-- Para la 2da, por ejemplo -->
+      <div class="features_software">
+        <h3 class="section-title">Incluye</h3>
+                <div class="feature">Almacenamiento en servidor web.</div>
+
+        <div class="feature">Mantenimiento y soporte técnico.</div>
+        <div class="feature">Actualizaciones y mejoras periódicamente.</div>
+      </div>
+
+     
+      <div class="price" id="price">$48.000</div>
+
+      <div class="addons">
+        <h3 class="section-title">Admininistración</h3>
+                  <div class="feature">Carga de comercios adheridos</div>
+        <div class="feature">Actualizazion  de partidos (resultados, fechas torneos)</div>
+                <div class="feature">Gestión de info institucional y novedades</div>
+
+
+        <div class="feature">Mantenimiento y soporte técnico.</div>
+        <div class="feature">Actualizaciones y mejoras periódicamente.</div>
+        <div class="addon" data-price="30000">Administrar por octopus. <span class="check"></span></div>
+     
+      </div>
+    </div>
+  </section>
+</span>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
