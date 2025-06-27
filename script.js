@@ -16,13 +16,14 @@
     });
 
 
-  document.querySelectorAll('.pricing-card').forEach(card => {
+ document.querySelectorAll('.pricing-card').forEach(card => {
     const basePrice = parseInt(card.dataset.basePrice);
     let totalPrice = basePrice;
 
     const priceDisplay = card.querySelector('.price');
     const addons = card.querySelectorAll('.addon');
 
+    // Inicializa con el precio base
     priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
 
     addons.forEach(addon => {
@@ -30,7 +31,11 @@
         const price = parseInt(addon.dataset.price);
         addon.classList.toggle('active');
 
-        totalPrice += addon.classList.contains('active') ? price : -price;
+        if (addon.classList.contains('active')) {
+          totalPrice += price;
+        } else {
+          totalPrice -= price;
+        }
 
         priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
       });
