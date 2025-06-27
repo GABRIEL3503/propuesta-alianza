@@ -23,9 +23,10 @@
   max-width: 100vw;
 }
     .section-unica{
-      display: flex
+        display: flex
 ;
     justify-content: center;
+    flex-direction: column;
     }
 
     .swiper {
