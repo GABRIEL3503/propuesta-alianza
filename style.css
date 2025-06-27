@@ -102,7 +102,9 @@
 }
 
 .titulo-dos{
-  font-weight: 200;
+  font-size: 30px;
+  margin: 62px 0px 40px 0px;
+  font-weight: 400;
       text-align: center;
     color: #2e70b7;
 }
@@ -136,6 +138,13 @@
  ;
     }
     .feature {
+      justify-content: flex-start;
+          gap: 4px;
+    display: flex
+;
+    font-size: 16px;
+    cursor: default;
+    align-items: flex-start;
         font-size: 16px;
       cursor: default;
     }
